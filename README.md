@@ -31,12 +31,12 @@
 
 ### 1. Agent Runtime: bounded execution and recovery
 
-在 [buildwithclaude](https://github.com/davepoon/buildwithclaude) 中实现并合并：
+在 [buildwithclaude](https://github.com/davepoon/buildwithclaude) [![GitHub Stars](https://img.shields.io/github/stars/davepoon/buildwithclaude?style=flat&label=stars)](https://github.com/davepoon/buildwithclaude) 中实现并合并：
 
 - [`checkpointed-agent-loop`](https://github.com/davepoon/buildwithclaude/pull/278)：为长任务提供版本化检查点、有限状态机、重试预算、原子写入、恢复入口和验证证据；脚本只负责状态，不执行命令或访问网络。
 - [`rag-evaluation-harness`](https://github.com/davepoon/buildwithclaude/pull/279)：实现确定性、离线的 RAG 评测工具，计算 Recall@K、MRR、Context Precision、Citation Coverage/Validity，并用退出码支持 CI 阈值门禁。
 
-在 Apache Agent 框架 [Burr](https://github.com/apache/burr) 中提交的进行中贡献：
+在 Apache Agent 框架 [Burr](https://github.com/apache/burr) [![GitHub Stars](https://img.shields.io/github/stars/apache/burr?style=flat&label=stars)](https://github.com/apache/burr) 中提交的进行中贡献：
 
 - [`InMemoryExecutionRecorder`](https://github.com/apache/burr/pull/890)：通过生命周期钩子记录 Agent 的 action、输入、结果、异常和状态变化，用于本地回放与测试。
 - [`Graph.to_dict()`](https://github.com/apache/burr/pull/891)：提供无需 Graphviz 或 tracking 依赖的确定性图结构导出。
@@ -44,19 +44,19 @@
 
 ### 2. Multi-agent isolation and orchestration safety
 
-在 [kagent](https://github.com/kagent-dev/kagent) 中实现并合并：
+在 [kagent](https://github.com/kagent-dev/kagent) [![GitHub Stars](https://img.shields.io/github/stars/kagent-dev/kagent?style=flat&label=stars)](https://github.com/kagent-dev/kagent) 中实现并合并：
 
 - [`isolateSessions` for remote agent tools](https://github.com/kagent-dev/kagent/pull/2504)：让并发远程 A2A 调用按配置创建独立上下文，避免多个子 Agent 共享可变 Session 状态。
 - [Agent Plugin skill selection hardening](https://github.com/kagent-dev/kagent/pull/2505)：在下载制品前拒绝路径穿越式名称、路径分隔符和重复 Skill，避免覆盖与非确定性物化。
 
-在 [llama-agents](https://github.com/run-llama/llama-agents) 中实现并合并：
+在 [llama-agents](https://github.com/run-llama/llama-agents) [![GitHub Stars](https://img.shields.io/github/stars/run-llama/llama-agents?style=flat&label=stars)](https://github.com/run-llama/llama-agents) 中实现并合并：
 
 - [拒绝并发复用活跃 Handler ID](https://github.com/run-llama/llama-agents/pull/738)：为阻塞与非阻塞接口返回稳定的 `409 Conflict`，同时保留终态 ID 的复用能力。
 - [WorkflowClient 类型化工作流内省](https://github.com/run-llama/llama-agents/pull/739)：暴露输入/输出 Schema、事件 Schema 与工作流图结构，并补充客户端集成测试。
 
 ### 3. MCP client and inspection tooling
 
-在 [mcp-use](https://github.com/mcp-use/mcp-use) 中实现并合并：
+在 [mcp-use](https://github.com/mcp-use/mcp-use) [![GitHub Stars](https://img.shields.io/github/stars/mcp-use/mcp-use?style=flat&label=stars)](https://github.com/mcp-use/mcp-use) 中实现并合并：
 
 - [`RequestOptions` for prompt reads](https://github.com/mcp-use/mcp-use/pull/2302)：为 Prompt 请求补齐超时、取消和进度回调能力，并保持原有双参数接口兼容。
 - [Inspector RPC response correlation](https://github.com/mcp-use/mcp-use/pull/2303)：按 JSON-RPC ID、来源、方向和组件关联请求与响应，在 Inspector 中展示方法名、耗时和错误状态。
@@ -65,7 +65,7 @@
 
 ### 4. Agent evaluation, evidence and failure testing
 
-在 [agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) 中合并 5 项 Agent 工程方法：
+在 [agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) [![GitHub Stars](https://img.shields.io/github/stars/sickn33/agentic-awesome-skills?style=flat&label=stars)](https://github.com/sickn33/agentic-awesome-skills) 中合并 5 项 Agent 工程方法：
 
 - [Agent 评测报告](https://github.com/sickn33/agentic-awesome-skills/pull/1177)
 - [跨平台契约传播审计](https://github.com/sickn33/agentic-awesome-skills/pull/1178)
@@ -77,7 +77,7 @@
 
 ### 5. RAG and code intelligence reliability
 
-在 [code-graph-rag](https://github.com/vitali87/code-graph-rag) 中合并 3 个可靠性修复：
+在 [code-graph-rag](https://github.com/vitali87/code-graph-rag) [![GitHub Stars](https://img.shields.io/github/stars/vitali87/code-graph-rag?style=flat&label=stars)](https://github.com/vitali87/code-graph-rag) 中合并 3 个可靠性修复：
 
 - [目录结果确定性排序](https://github.com/vitali87/code-graph-rag/pull/1309)
 - [拒绝无效源码位置范围](https://github.com/vitali87/code-graph-rag/pull/1310)
@@ -87,23 +87,23 @@
 
 ### 6. Search, CLI and workflow engineering
 
-- [buildwithclaude #270](https://github.com/davepoon/buildwithclaude/pull/270)、[#271](https://github.com/davepoon/buildwithclaude/pull/271)、[#272](https://github.com/davepoon/buildwithclaude/pull/272)：处理 YAML 日期归一化、搜索对象 ID 冲突，以及 Plugin/Skill 同名时的检索结果身份保持。
-- [OpenCLI #2298](https://github.com/jackwener/OpenCLI/pull/2298)、[#2299](https://github.com/jackwener/OpenCLI/pull/2299)、[#2300](https://github.com/jackwener/OpenCLI/pull/2300)：增强无效 Manifest 回退、`<1.0.0` caret 版本范围及整数参数校验。
-- [planning-with-files #222](https://github.com/OthmanAdi/planning-with-files/pull/222)、[#223](https://github.com/OthmanAdi/planning-with-files/pull/223)、[#224](https://github.com/OthmanAdi/planning-with-files/pull/224)：修复 Copilot PowerShell Hook、禁用开关传播与 Python 解释器一致性。
+- [buildwithclaude #270](https://github.com/davepoon/buildwithclaude/pull/270) [![GitHub Stars](https://img.shields.io/github/stars/davepoon/buildwithclaude?style=flat&label=stars)](https://github.com/davepoon/buildwithclaude)、[#271](https://github.com/davepoon/buildwithclaude/pull/271)、[#272](https://github.com/davepoon/buildwithclaude/pull/272)：处理 YAML 日期归一化、搜索对象 ID 冲突，以及 Plugin/Skill 同名时的检索结果身份保持。
+- [OpenCLI #2298](https://github.com/jackwener/OpenCLI/pull/2298) [![GitHub Stars](https://img.shields.io/github/stars/jackwener/OpenCLI?style=flat&label=stars)](https://github.com/jackwener/OpenCLI)、[#2299](https://github.com/jackwener/OpenCLI/pull/2299)、[#2300](https://github.com/jackwener/OpenCLI/pull/2300)：增强无效 Manifest 回退、`<1.0.0` caret 版本范围及整数参数校验。
+- [planning-with-files #222](https://github.com/OthmanAdi/planning-with-files/pull/222) [![GitHub Stars](https://img.shields.io/github/stars/OthmanAdi/planning-with-files?style=flat&label=stars)](https://github.com/OthmanAdi/planning-with-files)、[#223](https://github.com/OthmanAdi/planning-with-files/pull/223)、[#224](https://github.com/OthmanAdi/planning-with-files/pull/224)：修复 Copilot PowerShell Hook、禁用开关传播与 Python 解释器一致性。
 
 ### 7. Apache contributions
 
 已合并：
 
-- [Apache Magpie #1112](https://github.com/apache/magpie/pull/1112)：明确本地配置覆盖优先级与 additive-only 安全边界。
-- [Apache Magpie #1113](https://github.com/apache/magpie/pull/1113)：修正文档对 Reviewer Routing 覆盖能力的表述。
-- [Apache Cordova Docs #1519](https://github.com/apache/cordova-docs/pull/1519)：澄清 Android Vector/Adaptive Icon 的转换与使用说明。
+- [Apache Magpie #1112](https://github.com/apache/magpie/pull/1112) [![GitHub Stars](https://img.shields.io/github/stars/apache/magpie?style=flat&label=stars)](https://github.com/apache/magpie)：明确本地配置覆盖优先级与 additive-only 安全边界。
+- [Apache Magpie #1113](https://github.com/apache/magpie/pull/1113) [![GitHub Stars](https://img.shields.io/github/stars/apache/magpie?style=flat&label=stars)](https://github.com/apache/magpie)：修正文档对 Reviewer Routing 覆盖能力的表述。
+- [Apache Cordova Docs #1519](https://github.com/apache/cordova-docs/pull/1519) [![GitHub Stars](https://img.shields.io/github/stars/apache/cordova-docs?style=flat&label=stars)](https://github.com/apache/cordova-docs)：澄清 Android Vector/Adaptive Icon 的转换与使用说明。
 
 审阅中：
 
-- [Apache Burr #890-#892](https://github.com/pulls?q=is%3Apr+author%3AWhxuan0701+repo%3Aapache%2Fburr)：执行记录、图序列化与执行步数预算。
-- [Apache Camel K #6773](https://github.com/apache/camel-k/pull/6773)：补充多命名空间安装方式文档。
-- [Apache Fineract Backoffice UI #449](https://github.com/apache/fineract-backoffice-ui/pull/449)：适配生成后的 Floating Rate Request 类型。
+- [Apache Burr #890-#892](https://github.com/pulls?q=is%3Apr+author%3AWhxuan0701+repo%3Aapache%2Fburr) [![GitHub Stars](https://img.shields.io/github/stars/apache/burr?style=flat&label=stars)](https://github.com/apache/burr)：执行记录、图序列化与执行步数预算。
+- [Apache Camel K #6773](https://github.com/apache/camel-k/pull/6773) [![GitHub Stars](https://img.shields.io/github/stars/apache/camel-k?style=flat&label=stars)](https://github.com/apache/camel-k)：补充多命名空间安装方式文档。
+- [Apache Fineract Backoffice UI #449](https://github.com/apache/fineract-backoffice-ui/pull/449) [![GitHub Stars](https://img.shields.io/github/stars/apache/fineract-backoffice-ui?style=flat&label=stars)](https://github.com/apache/fineract-backoffice-ui)：适配生成后的 Floating Rate Request 类型。
 
 ## Engineering Principles
 
