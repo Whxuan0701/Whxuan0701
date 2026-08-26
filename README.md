@@ -5,6 +5,7 @@
 > GitHub: [@Whxuan0701](https://github.com/Whxuan0701)
 
 关注 AI Agent 工程、后端系统与可靠性，希望把 Agent 从“可以运行”推进到“可验证、可恢复、可观测”。
+
 在研 APGFR: Prior-Guided Sparse-View Gaussian Reconstruction （3D Gaussian）
 
 ## About Me
