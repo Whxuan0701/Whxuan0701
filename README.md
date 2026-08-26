@@ -10,7 +10,7 @@
 
 - 学校：哈尔滨理工大学
 - 专业：大数据
-- 研究方向：Agent工程 / 大模型
+- 研究方向：Agent工程 / 大模型 / 计算机视觉 / 多模态Agent
 - 当前关注：AI Agent、MCP、Agent Runtime、RAG、评测与可观测性
 - 技术栈：Python / TypeScript / Go / Java
 - 邮箱：641627652@qq.com
