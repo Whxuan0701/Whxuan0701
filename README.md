@@ -23,8 +23,6 @@
 - 向 **32 个仓库**提出 **91 个 Pull Requests**，其中 **90 个是外部仓库贡献**
 - **28 个已合并**，**55 个仍开放**，**8 个已关闭**；开放项中包含仍处于 Draft 的工作
 - 向 **6 个 Apache 仓库**提出 **9 个 PR**：3 个已合并、5 个仍开放、1 个已关闭
-- 所有统计均来自 [`author:Whxuan0701 is:pr`](https://github.com/pulls?q=is%3Apr+author%3AWhxuan0701)，不包含 TapTap 项目
-
 > 我更关注 Agent 系统的工程可靠性：执行边界、状态恢复、并发隔离、MCP 协议、评测证据与可观测性。PR 数量只作为贡献范围的索引，合并状态与具体代码是主要证据。
 
 ## Representative Contributions
@@ -116,9 +114,9 @@
 
 ## Current Focus
 
-- [填写当前研究课题或项目]
-- [填写希望继续研究的问题]
-- [填写可公开的 Demo、论文或技术报告链接]
+- 3D Gaussian
+- ReAct
+- Dynamic Patch Perception
 
 ## Contact
 
