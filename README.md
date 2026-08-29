@@ -20,11 +20,11 @@
 
 ## Open-source Snapshot
 
-截至 2026-08-26，GitHub 公开记录中：
+截至 2026-08-29，GitHub 公开记录中：
 
-- 向 **32 个仓库**提出 **91 个 Pull Requests**，其中 **90 个是外部仓库贡献**
-- **28 个已合并**，**55 个仍开放**，**8 个已关闭**；开放项中包含仍处于 Draft 的工作
-- 向 **6 个 Apache 仓库**提出 **9 个 PR**：3 个已合并、5 个仍开放、1 个已关闭
+- 向 **33 个仓库**提出 **92 个 Pull Requests**，其中 **91 个是外部仓库贡献**
+- **35 个已合并**，**48 个仍开放**，**9 个已关闭**；开放项中包含仍处于 Draft 的工作
+- 向 **6 个 Apache 仓库**提出 **9 个 PR**：3 个已合并、4 个仍开放、2 个已关闭
 
 
 ## Representative Contributions
@@ -75,6 +75,8 @@
 
 这些工作把多 Agent 编排视为分布式状态机，重点检查所有权、租约与 fencing、版本化状态、分支 Join、重试与幂等、取消、预算、检查点恢复以及“验证制品与部署制品是否一致”。
 
+在 [GenAI_Agents](https://github.com/NirDiamant/GenAI_Agents) [![GitHub Stars](https://img.shields.io/github/stars/NirDiamant/GenAI_Agents?style=flat&label=stars)](https://github.com/NirDiamant/GenAI_Agents) 与 [agents-towards-production](https://github.com/NirDiamant/agents-towards-production) [![GitHub Stars](https://img.shields.io/github/stars/NirDiamant/agents-towards-production?style=flat&label=stars)](https://github.com/NirDiamant/agents-towards-production) 中的 6 个 PR 也已合并，覆盖 Human-in-the-Loop 审批 Agent 教程、Trace-based 评测教程、Notebook 贡献校验，以及 Agent 教程依赖声明和 FastAPI 流式响应测试修复。
+
 ### 5. RAG and code intelligence reliability
 
 在 [code-graph-rag](https://github.com/vitali87/code-graph-rag) [![GitHub Stars](https://img.shields.io/github/stars/vitali87/code-graph-rag?style=flat&label=stars)](https://github.com/vitali87/code-graph-rag) 中合并 3 个可靠性修复：
@@ -90,6 +92,7 @@
 - [buildwithclaude #270](https://github.com/davepoon/buildwithclaude/pull/270) [![GitHub Stars](https://img.shields.io/github/stars/davepoon/buildwithclaude?style=flat&label=stars)](https://github.com/davepoon/buildwithclaude)、[#271](https://github.com/davepoon/buildwithclaude/pull/271)、[#272](https://github.com/davepoon/buildwithclaude/pull/272)：处理 YAML 日期归一化、搜索对象 ID 冲突，以及 Plugin/Skill 同名时的检索结果身份保持。
 - [OpenCLI #2298](https://github.com/jackwener/OpenCLI/pull/2298) [![GitHub Stars](https://img.shields.io/github/stars/jackwener/OpenCLI?style=flat&label=stars)](https://github.com/jackwener/OpenCLI)、[#2299](https://github.com/jackwener/OpenCLI/pull/2299)、[#2300](https://github.com/jackwener/OpenCLI/pull/2300)：增强无效 Manifest 回退、`<1.0.0` caret 版本范围及整数参数校验。
 - [planning-with-files #222](https://github.com/OthmanAdi/planning-with-files/pull/222) [![GitHub Stars](https://img.shields.io/github/stars/OthmanAdi/planning-with-files?style=flat&label=stars)](https://github.com/OthmanAdi/planning-with-files)、[#223](https://github.com/OthmanAdi/planning-with-files/pull/223)、[#224](https://github.com/OthmanAdi/planning-with-files/pull/224)：修复 Copilot PowerShell Hook、禁用开关传播与 Python 解释器一致性。
+- [Needle #93](https://github.com/cactus-compute/needle/pull/93) [![GitHub Stars](https://img.shields.io/github/stars/cactus-compute/needle?style=flat&label=stars)](https://github.com/cactus-compute/needle)：同步 `finetune` CLI 的模型、并发、checkpoint 目录和 adapter 路径文档，并与源码参数保持一致。
 
 ### 7. Apache contributions
 

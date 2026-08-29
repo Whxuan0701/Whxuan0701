@@ -1,20 +1,24 @@
 # Open-source Pull Request Ledger
 
 GitHub account: [Whxuan0701](https://github.com/Whxuan0701)<br>
-Snapshot date: 2026-08-26<br>
+Snapshot date: 2026-08-29<br>
 Query: [`is:pr author:Whxuan0701`](https://github.com/pulls?q=is%3Apr+author%3AWhxuan0701)
 
 ## Scope and Status Rules
 
-- 本清单收录 GitHub 公开检索到的全部 **91 个 PR**，分布于 **32 个仓库**。
-- 其中 **28 MERGED / 55 OPEN / 8 CLOSED**；12 个 PR 当前为 Draft。
-- 共有 **90 个外部仓库 PR**，另有 1 个账号自有仓库 Draft PR。
+- 本清单收录 GitHub 公开检索到的全部 **92 个 PR**，分布于 **33 个仓库**。
+- 其中 **35 MERGED / 48 OPEN / 9 CLOSED**；12 个 PR 当前为 Draft。
+- 共有 **91 个外部仓库 PR**，另有 1 个账号自有仓库 Draft PR。
 - TapTap 项目没有出现在 `author:Whxuan0701` 的公开 PR 结果中，本清单也未纳入任何 TapTap 工作。
 - `OPEN` 仅表示仍在审阅或等待处理，不表示已被维护者认可；`CLOSED` 也不等同于合并。
 
 ## Complete Ledger
 
 ### Agent frameworks and runtimes
+
+#### cactus-compute/needle - 1 PR
+
+- `MERGED` [#93 docs: document finetune CLI options](https://github.com/cactus-compute/needle/pull/93)
 
 #### apache/burr - 3 PRs
 
@@ -148,15 +152,15 @@ Query: [`is:pr author:Whxuan0701`](https://github.com/pulls?q=is%3Apr+author%3AW
 
 #### NirDiamant/GenAI_Agents - 3 PRs
 
-- `OPEN` [#134 Add human-in-the-loop approval agent tutorial](https://github.com/NirDiamant/GenAI_Agents/pull/134)
-- `OPEN` [#135 Add trace-based agent evaluation tutorial](https://github.com/NirDiamant/GenAI_Agents/pull/135)
-- `OPEN` [#136 Add notebook contribution validator](https://github.com/NirDiamant/GenAI_Agents/pull/136)
+- `MERGED` [#134 Add human-in-the-loop approval agent tutorial](https://github.com/NirDiamant/GenAI_Agents/pull/134)
+- `MERGED` [#135 Add trace-based agent evaluation tutorial](https://github.com/NirDiamant/GenAI_Agents/pull/135)
+- `MERGED` [#136 Add notebook contribution validator](https://github.com/NirDiamant/GenAI_Agents/pull/136)
 
 #### NirDiamant/agents-towards-production - 3 PRs
 
-- `OPEN` [#79 fix: declare PyPDF2 for the Streamlit tutorial](https://github.com/NirDiamant/agents-towards-production/pull/79)
-- `OPEN` [#80 fix: declare pandas for the agent security tutorial](https://github.com/NirDiamant/agents-towards-production/pull/80)
-- `OPEN` [#81 test: fix FastAPI streaming response assertions](https://github.com/NirDiamant/agents-towards-production/pull/81)
+- `MERGED` [#79 fix: declare PyPDF2 for the Streamlit tutorial](https://github.com/NirDiamant/agents-towards-production/pull/79)
+- `MERGED` [#80 fix: declare pandas for the agent security tutorial](https://github.com/NirDiamant/agents-towards-production/pull/80)
+- `MERGED` [#81 test: fix FastAPI streaming response assertions](https://github.com/NirDiamant/agents-towards-production/pull/81)
 
 ### RAG, repository intelligence and CLI reliability
 
@@ -201,7 +205,7 @@ Query: [`is:pr author:Whxuan0701`](https://github.com/pulls?q=is%3Apr+author%3AW
 
 #### apache/fineract-backoffice-ui - 1 PR
 
-- `OPEN` [#449 fix(api): adapt floating rate form to generated request types](https://github.com/apache/fineract-backoffice-ui/pull/449)
+- `CLOSED` [#449 fix(api): adapt floating rate form to generated request types](https://github.com/apache/fineract-backoffice-ui/pull/449)
 
 #### apache/security-dash - 1 PR
 
@@ -217,6 +221,7 @@ Query: [`is:pr author:Whxuan0701`](https://github.com/pulls?q=is%3Apr+author%3AW
 
 | Repository | Total | Merged | Open | Closed |
 |---|---:|---:|---:|---:|
+| cactus-compute/needle | 1 | 1 | 0 | 0 |
 | davepoon/buildwithclaude | 6 | 5 | 0 | 1 |
 | sickn33/agentic-awesome-skills | 7 | 5 | 0 | 2 |
 | calesthio/OpenMontage | 5 | 0 | 5 | 0 |
@@ -238,18 +243,18 @@ Query: [`is:pr author:Whxuan0701`](https://github.com/pulls?q=is%3Apr+author%3AW
 | discourse/discourse | 3 | 0 | 3 | 0 |
 | Jeffallan/claude-skills | 3 | 0 | 3 | 0 |
 | yusufkaraaslan/Skill_Seekers | 3 | 0 | 3 | 0 |
-| NirDiamant/GenAI_Agents | 3 | 0 | 3 | 0 |
-| NirDiamant/agents-towards-production | 3 | 0 | 3 | 0 |
+| NirDiamant/GenAI_Agents | 3 | 3 | 0 | 0 |
+| NirDiamant/agents-towards-production | 3 | 3 | 0 | 0 |
 | yamadashy/repomix | 3 | 0 | 3 | 0 |
 | mcp-use/mcp-use | 2 | 2 | 0 | 0 |
 | apache/magpie | 2 | 2 | 0 | 0 |
 | apache/cordova-docs | 1 | 1 | 0 | 0 |
 | apache/camel-k | 1 | 0 | 1 | 0 |
-| apache/fineract-backoffice-ui | 1 | 0 | 1 | 0 |
+| apache/fineract-backoffice-ui | 1 | 0 | 0 | 1 |
 | apache/security-dash | 1 | 0 | 0 | 1 |
 | mastra-ai/mastra | 1 | 0 | 0 | 1 |
 | Whxuan0701/true-cost-chrome-extension | 1 | 0 | 1 | 0 |
-| **Total** | **91** | **28** | **55** | **8** |
+| **Total** | **92** | **35** | **48** | **9** |
 
 ## Maintenance
 
